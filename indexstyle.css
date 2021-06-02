@@ -1,5 +1,5 @@
 body{
-    background-image: radial-gradient(rgb(221, 240, 52),rgb(200, 236, 252));
+    background-image: radial-gradient(rgb(221, 240, 52),rgb(245, 150, 178));
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -10,7 +10,7 @@ header, footer{
     background-color: transparent;
     width:50%;
     height:400px;
-    margin:50px auto;
+    margin:10px auto;
 }
 
 #flip{
@@ -53,7 +53,7 @@ header, footer{
 
 h1,h2{
     font-family: Bradley Hand ITC;
-    color:rgb(38, 157, 161) ;
+    color:rgb(34, 128, 131) ;
     font-weight: 900;
     font-size:4vw;
     text-align: center;
@@ -64,7 +64,21 @@ h2{
 }
 @media screen and (max-width:480px) {
     #surprise{
-        height:150px;
+        height:100px;
     }
     
+}
+footer{
+    text-align: center;
+    font-family: cursive;
+    color:rgb(24, 77, 121);
+}
+
+canvas{
+    width:100%;
+    height:200px;
+    background-image: linear-gradient(orange,pink);
+    border:2px ridge rgb(129, 78, 78);
+    border-radius: 10%;
+    box-shadow: rgb(160, 104, 123) 5px 5px;
 }
