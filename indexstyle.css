@@ -9,7 +9,7 @@ header, footer{
 #surprise{
     background-color: transparent;
     width:50%;
-    height: 400px;
+    height:400px;
     margin:50px auto;
 }
 
@@ -45,7 +45,7 @@ header, footer{
 }
 #hiddendiv p{
     text-align: center;
-    font-size:1.5vw;
+    font-size:1.7vw;
     font-family: Bradley Hand ITC;
     font-weight: 900;
     
@@ -61,4 +61,10 @@ h1,h2{
 }
 h2{
     font-size: 2vw;
+}
+@media screen and (min-width:480px) {
+    #surprise{
+        height:100px;
+    }
+    
 }
