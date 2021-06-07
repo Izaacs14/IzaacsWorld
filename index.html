@@ -10,44 +10,8 @@
 </head>
 <body>
     <canvas id="canvas"></canvas>
-    <header>
-        
-   
-        
-        <nav id="navbar">
-            <a>
-
-            </a>
-            <a>
-                
-            </a>
-            <a>
-                
-            </a>
-        </nav>
     
-    </header>
     
-    <div id="surprise">
-        <div id="flip">
-            <div id="visiblediv">
-                <img id="visibleimg" src="flying.png">
-            </div>
-            <div id="hiddendiv">
-                <p>Surprise🎉🎁🎈✨<br></p>
-                <p>This is for you Mohammed<br><br>
-                <span style="font-size: 1.7vw;color:rgb(253, 69, 2);">Happy Bday</span>🥰😘<br><br>
-                My Guddu Lala<br>
-                My Lal Tamatar<br>
-                Mulla, Gajar, Shalgam, Kakdi..<br><br>
-                (p s: Don't get pissed off😜)
-            </p>
-            </div>
-        </div>    
-    </div>
-    <footer>
-        Hope you liked it!
-    </footer>
     <script>
         var canvas = document.getElementById("canvas");
 var c = canvas.getContext("2d");
@@ -69,8 +33,14 @@ var mousey = 0;
 addEventListener("mousemove", function() {
   mousex = event.clientX;
   mousey = event.clientY;
+  
 });
 
+addEventListener("click", function() {
+  mousex = event.clientX;
+  mousey = event.clientY;
+  window.location.href="greeting.html";
+});
 
 var grav = 0.99;
 c.strokeWidth=5;
@@ -124,6 +94,7 @@ function animate() {
   c.font="10vw Bradley Hand ITC";
   c.fontWeight=900;
   c.fillText("Bday 🎁 for my 👦", canvas.width/2, canvas.height/2-50);
+  
   c.font="5vw Bradley Hand ITC";
   c.fontWeight=900;
   c.fillText("Izaacs World", canvas.width/2, canvas.height/2+100);
@@ -154,6 +125,7 @@ function animate() {
       
     //forloop end
     }
+    
 //animation end
 }
 
@@ -162,7 +134,7 @@ animate();
 setInterval(function() {
   bal.push(new Ball());
   bal.splice(0, 1);
-}, 400);
+}, 100);
 
     </script>
 </body>

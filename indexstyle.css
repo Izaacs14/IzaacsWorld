@@ -81,4 +81,5 @@ canvas{
     border:2px ridge rgb(129, 78, 78);
     border-radius: 10%;
     box-shadow: rgb(160, 104, 123) 5px 5px;
+    overflow: visible;
 }
