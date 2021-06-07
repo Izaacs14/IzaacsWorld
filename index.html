@@ -9,12 +9,12 @@
     
 </head>
 <body>
-    <canvas id="canvas"></canvas>
-    <iframe src="bdaysong.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+  <iframe src="bdaysong.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
     <audio id="audio" controls autoplay>
       <source src="bdaysong.mp3" type="audio/mp3">
     </audio>
+    <canvas id="canvas"></canvas>
     
     
     <script>
@@ -100,10 +100,13 @@ function animate() {
   c.fontWeight=900;
   c.fillText("Bday 🎁 for my 👦", canvas.width/2, canvas.height/2-50);
   
-  c.font="5vw Bradley Hand ITC";
+  c.font="6vw Bradley Hand ITC";
   c.fontWeight=900;
   c.fillText("Izaacs World", canvas.width/2, canvas.height/2+100);
+  c.font="3vw Bradley Hand ITC";
+  
   for (var i = 0; i < bal.length; i++) {
+    c.fillText("Click To Know More", canvas.width/2, canvas.height/2+200);
     bal[i].update();
     bal[i].y += bal[i].dy;
     bal[i].x += bal[i].dx;
