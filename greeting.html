@@ -37,7 +37,7 @@
             <div id="visiblediv">
                 <img id="visibleimg" src="flying.png">
             </div>
-            <div id="hiddendiv">
+            <div id="hiddendiv" onmouseover="playsound()">
                 <p>Surprise🎉🎁🎈✨<br></p>
                 <p>This is for you Mohammed<br><br>
                 <span style="font-size: 1.7vw;color:rgb(253, 69, 2);">Happy Bday</span>🥰😘<br><br>
@@ -46,14 +46,24 @@
                 Mulla, Gajar, Shalgam, Kakdi..<br><br>
                 (p s: Don't get pissed off😜)
             </p>
+          
+    
+    <audio id="audio" controls>
+      <source src="bgmusic.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var audio1 = document.getElementById("audio");
+
+//Example of an HTML Audio/Video Method
+
+function playsound() {
+  audio1.play();
+}
+    </script>
             </div>
         </div>    
     </div>
-    <iframe src="bgmusic.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-
-    <audio id="audio" controls autoplay>
-      <source src="bgmusic.mp3" type="audio/mp3">
-    </audio>
+    
     <footer>
         Hope you liked it!
         
