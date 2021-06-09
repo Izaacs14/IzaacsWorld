@@ -13,27 +13,22 @@
       </script>
 </head>
 <body>
- 
-    <header>
+
         
-                <h1>
-        💫Izaacs World💫</h1>
-        <nav id="navbar">
-            
-            <a>
-                
-            </a>
-            <a>
-                
-            </a>
-        </nav>
-    
-    </header>
+        <nav class="topnav">
+            <a href="index.html" class="active">Home 🏡</a>
+            <a href="greeting.html">Surprise 🎉</a>
+            <a href="moments.html">Moments 📸</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i></a>
+          </nav>
+          <h1>💫Izaacs World💫</h1>
+
     
     <div id="surprise">
         <div id="flip">
             <div id="visiblediv">
-                <img id="visibleimg" src="flying.png">
+                <img id="visibleimg" src="izaan1.jpeg">
             </div>
             <div id="hiddendiv" onmouseover="playsound()">
                 <p>Surprise🎉🎁🎈✨<br></p>
@@ -63,8 +58,17 @@ function playsound() {
     </div>
     
     
-    <a href="#mybookmark"><img id="clickimg" src="clickme.gif">
+    <a href="moments.html"><img id="clickimg" src="clickme.gif">
 
     </a>
+    <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }</script>
 </body>
 </html>

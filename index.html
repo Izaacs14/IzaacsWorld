@@ -9,10 +9,19 @@
     
 </head>
 <body>
+  <nav class="topnav">
+    <a href="index.html" class="active">Home 🏡</a>
+    <a href="greeting.html">Surprise 🎉</a>
+    <a href="moments.html">Moments 📸</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </nav>
+  <h1>💫Izaacs World💫</h1>
   <iframe src="bdaysong.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
     <audio id="audio" controls autoplay>
       <source src="bdaysong.mp3" type="audio/mp3">
+      
     </audio>
     <canvas id="canvas"></canvas>
     
@@ -143,7 +152,15 @@ setInterval(function() {
   bal.push(new Ball());
   bal.splice(0, 1);
 }, 100);
-
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
     </script>
 </body>
 </html>
