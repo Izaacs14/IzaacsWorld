@@ -107,7 +107,7 @@ canvas{
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 2% 10%;
+    padding: 1% 10%;
     text-decoration: none;
     font-size: 17px;
   }
@@ -132,8 +132,9 @@ canvas{
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
-      float: right;
+      float: left;
       display: block;
+      width:10px;
     }
   }
   
@@ -141,8 +142,9 @@ canvas{
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
+        width:20px;
+        position: absolute;
+      left: 0;
       top: 0;
     }
     .topnav.responsive a {
@@ -150,6 +152,7 @@ canvas{
       display: block;
       text-align: left;
     }
+    
     #clickimg{
         width:5%;
     }
