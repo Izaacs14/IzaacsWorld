@@ -1,6 +1,7 @@
 body{
     background-image: radial-gradient(rgb(221, 240, 52),rgb(245, 150, 178));
     background-repeat: no-repeat;
+    height: 100%;
     background-size:cover;
 }
 header, footer{
@@ -99,6 +100,7 @@ canvas{
     overflow: hidden;
     border-radius: 20%;
     margin:1% 20%;
+  opacity:0.5;
   }
   
   /* Style the links inside the navigation bar */
