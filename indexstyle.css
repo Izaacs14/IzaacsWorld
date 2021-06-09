@@ -150,5 +150,8 @@ canvas{
       display: block;
       text-align: left;
     }
+    #clickimg{
+        width:5%;
+    }
   }
   
