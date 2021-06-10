@@ -2,6 +2,7 @@ body{
     background-image: radial-gradient(rgb(221, 240, 52),rgb(245, 150, 178));
     background-repeat: no-repeat;
     background-size:100% 100%;
+    background-position: center;
 }
 header, footer{
     background-image: linear-gradient(to bottom right, gray cadetblue);
@@ -52,7 +53,7 @@ header, footer{
 }
 
 h1,h2{
-    font-family: Bradley Hand ITC;
+    font-family: Bradley Hand ITC,cursive;
     color:rgb(34, 128, 131) ;
     font-weight: 900;
     font-size:4vw;
@@ -89,17 +90,54 @@ canvas{
 #clickimg{
     border-radius: 50%;
     width:10%;
-    position: -webkit-sticky;
-  position: sticky;
+    position: fixed;
+  
   bottom: 0;
-  float:right;
+  right:0;
 }
 .topnav {
     background-color:turquoise;
     overflow: hidden;
     border-radius: 20%;
-    margin:1% 20%;
-  opacity:0.5;
+    margin:0 auto;
+    margin-top:0;
+  width:90%;
+  
+  border: 4px double rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.2);
+    font-family: Oxygen, sans-serif,cursive;
+  }
+  div#moments, div.mydiv { 
+    color: #fff;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 2rem;
+    border: 4px double rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.3);
+    font-family: Oxygen, sans-serif,cursive;
+  }
+  #mytopdiv >#moments{
+    width:40%;
+    height:fit-content;
+    float:left;
+    margin-bottom:20px ;
+    
+  }
+  .thoughtsp{
+    font-family: Bradley Hand ITC, cursive;
+    font-size: 1.5vw;
+    font-weight: 700;
+  }
+  #mytopdiv{
+    width:80%;
+    height:400px;
+    padding: 2%;
+    margin:auto;
+    margin-top:20%;
+  }
+  @media all and (max-width: 770px) {
+    div#mytopdiv { width:70%; }
   }
   
   /* Style the links inside the navigation bar */
@@ -108,9 +146,9 @@ canvas{
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 1% 10%;
+    padding: 1% 8%;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.2vw;
   }
   
   /* Change the color of links on hover */
@@ -141,9 +179,10 @@ canvas{
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
+    .topnav{width:50%;}
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
-        width:20px;
+        width:10px;
         position: absolute;
       left: 0;
       top: 0;

@@ -18,7 +18,7 @@
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home 🏡</a>
             <a href="greeting.html">Surprise 🎉</a>
-            <a href="#moments">Pictogram 📸</a>
+            <a href="greeting.html#moments">Pictogram 📸</a>
             <a href="thoughts.html">Izaacs Memoirs 💭</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i></a>
@@ -51,6 +51,7 @@
 //Example of an HTML Audio/Video Method
 
 function playsound() {
+  audio1.volume=0.2;
   audio1.play();
 }
     </script>
@@ -59,9 +60,14 @@ function playsound() {
     </div>
     
     
-    <a href="moments.html"><img id="clickimg" src="clickme.gif">
-
-    </a>
+    <a href="#mytopdiv"><img id="clickimg" src="clickme.gif"></a>
+    <div id="mytopdiv">
+    <div id="moments">
+      <h1>Moments I Cherish</h1>
+      <p class="thoughtsp">Izaan I feel blessed when I see you..<br>
+      You already know it..</p>
+    </div>
+  </div>
     <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -70,6 +76,26 @@ function playsound() {
           } else {
             x.className = "topnav";
           }
-        }</script>
+        }
+        
+        var bgImageArray = ["flying.png", "flying1.png", "flying2.png", "InU.png"],
+secs = 4;
+bgImageArray.forEach(function(img){
+    new Image().src = img; 
+    // caches images, avoiding white flash between background replacements
+});
+
+function backgroundSequence() {
+	window.clearTimeout();
+	var k = 0;
+	for (i = 0; i < bgImageArray.length; i++) {
+		setTimeout(function(){ 
+			document.getElementById('mytopdiv').style.background = "url("+bgImageArray[k]+" ) no-repeat center center fixed";
+			document.getElementById('mytopdiv').style.backgroundSize ="cover";
+		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+		}, (secs * 1000) * i)	
+	}
+}
+backgroundSequence();</script>
 </body>
 </html>

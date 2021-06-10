@@ -19,13 +19,29 @@
   <nav class="topnav" id="myTopnav">
     <a href="index.html" class="active">Home 🏡</a>
     <a href="greeting.html">Surprise 🎉</a>
-    <a href="#moments">Pictogram 📸</a>
+    <a href="greeting.html#moments">Pictogram 📸</a>
     <a href="thoughts.html">Izaacs Memoirs 💭</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i></a>
   </nav>
           <h1>💫Izaacs World💫</h1>
 
-    
+          <div class="mydiv">
+            <h1>Moments I Cherish</h1>
+            <p class="thoughtsp">A repeating sequence of fullscreen background images, pushed all the way to the root element. Crossfading effect in Webkit-derived browsers (Chrome, Safari, Opera).</p>
+          </div>
+          <a href="greeting.html#mytopdiv"><img id="clickimg" src="clickme.gif"></a>
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
     
 </body>
