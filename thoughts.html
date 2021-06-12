@@ -26,10 +26,11 @@
   </nav>
           <h1>💫Izaacs World💫</h1>
 
-          <div class="mydiv">
-            <h1>Moments I Cherish</h1>
+          <!--<div class="mydiv">
+           <h1>Moments I Cherish</h1>
             <p class="thoughtsp">A repeating sequence of fullscreen background images, pushed all the way to the root element. Crossfading effect in Webkit-derived browsers (Chrome, Safari, Opera).</p>
-          </div>
+          </div>-->
+		  <canvas id="canvas1"></canvas>   
           <a href="greeting.html#mytopdiv"><img id="clickimg" src="clickme.gif"></a>
 
     <script>
@@ -42,6 +43,85 @@
             x.className = "topnav";
           }
         }
+    </script>
+	<script>
+    
+    var canvas = document.getElementById("canvas1");
+var c = canvas.getContext("2d");
+var tx = window.innerWidth;
+var ty = window.innerHeight;
+canvas.width = tx;
+canvas.height = ty;
+var deltax=0;
+c.font="4vw Bradley Hand ITC";
+c.fillStyle="#228083";
+c.textAlign="center";
+var img = new Image();
+img.src = 'cake.jpg';
+var img1=new Image();
+img1.src="balloons.png"
+
+
+x=canvas.width/2-100;
+y=canvas.height;
+
+var grav = 0.99;
+c.strokeWidth=5;
+function randomColor() {
+  return (
+    "rgb(" +
+    Math.round(Math.random() * 250) +
+    "," +
+    Math.round(Math.random() * 250) +
+    "," +
+    Math.round(Math.random() * 250) +
+    
+    ")"
+  );
+}
+c.fillStyle=randomColor();
+
+	
+function animate() {    
+  if (tx != window.innerWidth || ty != window.innerHeight) {
+    tx = window.innerWidth;
+    ty = window.innerHeight;
+    canvas.width = tx;
+    canvas.height = ty;
+  }
+  requestAnimationFrame(animate);
+  c.clearRect(0, 0, tx, ty);
+  
+  c.fontWeight=900;
+  c.fillText("Happy Birthday", deltax, 150);
+  c.drawImage(img,canvas.width/2-200,canvas.height/2,canvas.width/3,canvas.height/2);
+	var i=1;
+  
+   z=y-deltax;
+   
+  
+    
+  c.drawImage(img1,x-600,y-deltax,200,400);
+  c.drawImage(img1,x-300,y-deltax,200,400);
+  c.drawImage(img1,x+600,y-deltax,200,400);
+  c.drawImage(img1,x+300,y-deltax,200,400);
+   
+ 
+	
+        
+   
+  
+}
+
+animate();
+
+setInterval(function() {
+  deltax=deltax+10;
+  if (deltax>canvas.width-50){
+      deltax=0
+  }
+}, 100);
+
     </script>
     
 </body>
