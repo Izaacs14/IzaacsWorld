@@ -53,7 +53,7 @@ header, footer{
 }
 
 h1,h2{
-    font-family: Bradley Hand ITC,cursive;
+    font-family: Bradley Hand ITC;
     color:rgb(34, 128, 131) ;
     font-weight: 900;
     font-size:4vw;
@@ -86,6 +86,10 @@ canvas{
     border-radius: 50%;
     box-shadow: rgb(160, 104, 123) 5px 5px;
     overflow: visible;
+}
+#canvas1{
+	background: rgba(0,0,0,0.3);
+	border-radius: 1% 20%;
 }
 #clickimg{
     border-radius: 50%;
@@ -192,7 +196,12 @@ canvas{
       display: block;
       text-align: left;
     }
-    
+    h1{
+      font-size: 5vw;
+    }
+    h2{
+      font-size: 4vw;
+    }
     #clickimg{
         width:10%;
     }
