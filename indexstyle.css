@@ -228,6 +228,8 @@ canvas{
 margin-top:60%;
 margin-bottom:5px:
 }
+#mytopdiv >#moments{
+margin-top:60%;}
   }
   @media all and (min-width:2500px){
 #surprise{
