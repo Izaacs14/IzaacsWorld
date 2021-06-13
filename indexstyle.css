@@ -200,7 +200,7 @@ canvas{
     .topnav{width:50%;
     height:10%;}
     .topnav a{
-      font-size: 2vw;
+      font-size: 4vw;
     }
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
