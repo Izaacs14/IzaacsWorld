@@ -51,7 +51,7 @@
 //Example of an HTML Audio/Video Method
 
 function playsound() {
-  audio1.volume=0.2;
+  audio1.volume=0.1;
   audio1.play();
 }
     </script>
@@ -63,10 +63,11 @@ function playsound() {
     <a href="#mytopdiv"><img id="clickimg" src="clickme.gif"></a>
     <div id="mytopdiv">
     <div id="moments">
-      <h1>Moments I Cherish</h1>
-      <p class="thoughtsp">Izaan I feel blessed when I see you..<br>
-      You already know it..</p>
+      <h1>Moments We Cherish</h1>
+      <p class="thoughtsp">Izaan-A true blessing you are!!<br> Here are few of your pics we cherish always..<br><br>Enjoy Ur Day<br>Chase Your Dreams<br>Stay blessed!!<br>And Be Happy Always!!<br>Lots of Love👨‍👩‍👦😍ummuuaah..😘</p>
+      
     </div>
+    <img id= "emoji" src="emoji.png">
   </div>
     <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
         function myFunction() {
@@ -78,9 +79,25 @@ function playsound() {
           }
         }
         
-        var bgImageArray = ["flying.png", "flying1.png", "flying2.png", "InU.png"],
-secs = 4;
-bgImageArray.forEach(function(img){
+        var bgImageArray = ["flying.png","pic1.jpeg","pic2.jpeg","pic3.jpeg","pic4.jpeg","pic5.jpeg","pic6.jpeg","pic7.jpeg","pic8.jpeg","pic9.jpeg","pic10.jpeg","pic11.jpeg","pic12.jpeg","pic13.jpeg","pic14.jpeg","pic15.jpeg","pic16.jpeg","pic17.jpeg","pic18.jpeg","pic19.jpeg","pic20.jpeg","pic21.jpeg"];
+secs = 6;
+
+function shuffleArray(array) {
+   for (var i = array.length - 1; i > 0; i--) { 
+    
+       // Generate random number 
+       var j = Math.floor(Math.random() * (i + 1));
+                    
+       var temp = array[i];
+       array[i] = array[j];
+       array[j] = temp;
+   }
+        
+   return array;
+}
+myArray=shuffleArray(bgImageArray);
+console.log(myArray)
+myArray.forEach(function(img){
     new Image().src = img; 
     // caches images, avoiding white flash between background replacements
 });
@@ -88,11 +105,11 @@ bgImageArray.forEach(function(img){
 function backgroundSequence() {
 	window.clearTimeout();
 	var k = 0;
-	for (i = 0; i < bgImageArray.length; i++) {
+	for (i = 0; i < myArray.length; i++) {
 		setTimeout(function(){ 
-			document.getElementById('mytopdiv').style.background = "url("+bgImageArray[k]+" ) no-repeat center center fixed";
-			document.getElementById('mytopdiv').style.backgroundSize ="cover";
-		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+			document.getElementById('mytopdiv').style.background = "url("+myArray[k]+" ) no-repeat center center fixed";
+			document.getElementById('mytopdiv').style.backgroundSize ="contain";
+		if ((k + 1) === myArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
 		}, (secs * 1000) * i)	
 	}
 }

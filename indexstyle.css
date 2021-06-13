@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-size:100% 100%;
     background-position: center;
+    
 }
 header, footer{
     background-image: linear-gradient(to bottom right, gray cadetblue);
@@ -115,11 +116,12 @@ canvas{
     color: #fff;
     width: 80%;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 1%;
     padding: 2rem;
     border: 4px double rgba(255,255,255,0.3);
     background: rgba(0,0,0,0.3);
     font-family: Oxygen, sans-serif,cursive;
+    font-weight:900;
   }
   #mytopdiv >#moments{
     width:40%;
@@ -129,16 +131,27 @@ canvas{
     
   }
   .thoughtsp{
-    font-family: Bradley Hand ITC, cursive;
+    font-family: Bradley Hand ITC;
     font-size: 1.5vw;
     font-weight: 700;
   }
   #mytopdiv{
-    width:80%;
-    height:400px;
-    padding: 2%;
+    width:70%;
+    height:500px;
+    padding: 3%;
     margin:auto;
-    margin-top:20%;
+    margin-top:10%;
+    border-radius: 10%;
+    box-shadow: gray 2px 2px;
+    border:2px double gray;
+  }
+  #emoji{
+    
+    width:20%;
+    height:auto;
+    float:right;
+    margin-bottom:10px ;
+    margin-top: 40%;
   }
   @media all and (max-width: 770px) {
     div#mytopdiv { width:70%; }
