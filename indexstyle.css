@@ -224,6 +224,9 @@ canvas{
     #clickimg{
         width:20%;
     }
+#emoji{
+margin-top:50%;
+}
   }
   @media all and (min-width:2500px){
 #surprise{
