@@ -157,6 +157,12 @@ canvas{
   }
   @media all and (max-width: 770px) {
     div#mytopdiv { width:70%; }
+    #emoji{
+      margin-top:90%;
+      margin-bottom:5px;
+      }
+      #moments{
+      margin-top:90%;}
   }
   
   /* Style the links inside the navigation bar */
@@ -225,12 +231,7 @@ canvas{
     #clickimg{
         width:20%;
     }
-#emoji{
-margin-top:80%;
-margin-bottom:5px;
-}
-#mytopdiv >#moments{
-margin-top:80%;}
+
   }
   @media all and (min-width:2000px){
 #surprise{
