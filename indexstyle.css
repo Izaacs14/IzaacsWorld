@@ -156,7 +156,8 @@ canvas{
     margin-top: 40%;
   }
   @media all and (max-width: 770px) {
-    div#mytopdiv { width:80%; }
+    div#mytopdiv { width:80%;
+    background-size: cover; }
     #surprise{
       width:95%;
       height:650px;
