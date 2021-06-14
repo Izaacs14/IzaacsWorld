@@ -258,5 +258,8 @@ canvas{
     border-radius: 5% 20%;
     
 }
+#hiddendiv p{
+  padding:1%;
+}
 
 }
