@@ -161,9 +161,10 @@ canvas{
     #surprise{
       width:95%;
       height:650px;
+      padding:1%;
     }
     #hiddendiv>p{
-      font-size:5vw;
+      font-size:3vw;
     }
     #emoji{
       position:relative;
