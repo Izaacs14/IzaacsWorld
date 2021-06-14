@@ -232,9 +232,10 @@ margin-bottom:5px:
 #mytopdiv >#moments{
 margin-top:80%;}
   }
-  @media all and (min-width:2500px){
+  @media all and (min-width:2000px){
 #surprise{
     height:600px;
+    border-radius: 5% 20%;
     
 }
 
