@@ -158,7 +158,7 @@ canvas{
   @media all and (max-width: 770px) {
     div#mytopdiv { width:80%; }
     #surprise{
-      width:60%;
+      width:90%;
       height:700px;
     }
     #emoji{
