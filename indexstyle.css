@@ -156,14 +156,16 @@ canvas{
     margin-top: 40%;
   }
   @media all and (max-width: 770px) {
-    div#mytopdiv { width:70%;
-    height:80%; }
+    div#mytopdiv { width:70%; }
+    #surprise{
+      height:700px;
+    }
     #emoji{
       margin-top:98%;
       margin-bottom:5px;
       }
       #moments{
-      margin-top:95%;}
+      margin-top:98%;}
   }
   
   /* Style the links inside the navigation bar */
