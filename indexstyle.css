@@ -162,7 +162,7 @@ canvas{
       height:650px;
     }
     #hiddendiv>p{
-      font-size:7vw;
+      font-size:5vw;
     }
     #emoji{
    
@@ -248,6 +248,7 @@ canvas{
   }
   @media all and (min-width:2000px){
 #surprise{
+  margin-top:5%;
     height:1000px;
     border-radius: 5% 20%;
     
