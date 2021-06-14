@@ -156,7 +156,7 @@ canvas{
     margin-top: 40%;
   }
   @media all and (max-width: 770px) {
-    div#mytopdiv { width:70%; }
+    div#mytopdiv { width:80%; }
     #surprise{
       height:700px;
     }
@@ -238,7 +238,7 @@ canvas{
   }
   @media all and (min-width:2000px){
 #surprise{
-    height:600px;
+    height:1000px;
     border-radius: 5% 20%;
     
 }
