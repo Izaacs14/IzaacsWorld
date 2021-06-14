@@ -165,14 +165,16 @@ canvas{
       font-size:5vw;
     }
     #emoji{
-   
+      position:relative;
+      top:300px;
+      z-index:1;
       margin-bottom:5px;
       }
       #moments{
         
         position:relative;
         float:left;
-        top:500px;
+        top:300px;
         z-index:1;
       }
       
