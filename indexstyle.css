@@ -164,9 +164,7 @@ canvas{
       margin-top:98%;
       margin-bottom:5px;
       }
-      #moments{
-      margin-top:98%;}
-  }
+    
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -195,6 +193,7 @@ canvas{
   .topnav .icon {
     display: none;
   }
+}
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -236,7 +235,7 @@ canvas{
     }
 
   }
-  @media all and (min-width:2000px){
+@media all and (min-width:2000px){
 #surprise{
     height:1000px;
     border-radius: 5% 20%;
