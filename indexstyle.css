@@ -55,6 +55,7 @@ header, footer{
 }
 
 h1,h2{
+  
     font-family: Bradley Hand ITC;
     color:rgb(34, 128, 131) ;
     font-weight: 900;
@@ -109,8 +110,7 @@ canvas{
     margin:0 auto;
     margin-top:0;
   width:90%;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; 
+   
   border: 4px double rgba(255,255,255,0.3);
     background: rgba(0,0,0,0.2);
     font-family: Oxygen, sans-serif,cursive;
