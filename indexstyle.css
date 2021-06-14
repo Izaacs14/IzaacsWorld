@@ -161,6 +161,9 @@ canvas{
       width:95%;
       height:650px;
     }
+    #hiddendiv>p{
+      font-size:3vw;
+    }
     #emoji{
    
       margin-bottom:5px;
