@@ -161,10 +161,10 @@ canvas{
       height:700px;
     }
     #emoji{
-      margin-top:98%;
+   
       margin-bottom:5px;
       }
-    
+      
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -235,7 +235,7 @@ canvas{
     }
 
   }
-@media all and (min-width:2000px){
+  @media all and (min-width:2000px){
 #surprise{
     height:1000px;
     border-radius: 5% 20%;
