@@ -44,6 +44,7 @@ header, footer{
     transform: rotateY(180deg);
     opacity:1;
     
+    
 }
 #hiddendiv p{
     text-align: center;
@@ -225,11 +226,11 @@ canvas{
         width:20%;
     }
 #emoji{
-margin-top:60%;
+margin-top:80%;
 margin-bottom:5px:
 }
 #mytopdiv >#moments{
-margin-top:60%;}
+margin-top:80%;}
   }
   @media all and (min-width:2500px){
 #surprise{
