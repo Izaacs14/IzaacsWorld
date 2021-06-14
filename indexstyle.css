@@ -263,5 +263,7 @@ canvas{
 #hiddendiv p{
   padding:0;
 }
-
+#mytopdiv{
+  margin-top: 15%;
+}
 }
