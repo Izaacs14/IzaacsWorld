@@ -43,7 +43,7 @@ header, footer{
     color: black;
     transform: rotateY(180deg);
     opacity:1;
-    
+  
     
 }
 #hiddendiv p{
@@ -51,7 +51,7 @@ header, footer{
     font-size:1.7vw;
     font-family: Bradley Hand ITC;
     font-weight: 900;
-    
+    padding:2%;
 }
 
 h1,h2{
