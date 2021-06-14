@@ -168,6 +168,13 @@ canvas{
    
       margin-bottom:5px;
       }
+      #moments{
+        
+        position:relative;
+        float:left;
+        top:500px;
+        z-index:1;
+      }
       
     }
   /* Style the links inside the navigation bar */
