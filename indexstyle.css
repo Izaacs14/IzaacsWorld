@@ -180,7 +180,9 @@ canvas{
         top:300px;
         z-index:1;
       }
-      
+      #canvas1{
+        display:none;
+      }
     }
   /* Style the links inside the navigation bar */
   .topnav a {
